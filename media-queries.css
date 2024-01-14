@@ -105,6 +105,7 @@
 
     .updates {
         height: fit-content;
+        width: 100%;
     }
     .container {
         height: fit-content;
