@@ -79,7 +79,7 @@ input[type="search"] {
 .options {
     display: block;
     width: 60%;
-    height: 160px;
+    height: fit-content;
     background-color: #4d4d4d;
     position: absolute;
     left: 19%;

@@ -56,6 +56,10 @@
         width: 100%;
         margin: 24px auto;
     }
+    .about-law p{
+        text-align: justify;
+        padding: 8px 24px;
+    }
     .corona {
         width: 100%;
         display: flex;
@@ -115,3 +119,103 @@
         text-align: left;
     }
 }
+
+
+    /* Adding Media Queries for tablet Devices */
+
+    @media only screen and (width >= 481px) and (width <= 768px) {
+        .header-top {
+            padding: 0;
+            text-align: center;
+        }
+
+        .menu {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo h1{
+            text-align: center;
+        }
+
+        .options {
+            width: 100%;
+            margin: auto;
+            left: 0;
+            top: 72%;
+            height: fit-content;
+        }
+        .options form {
+            display: flex;
+            flex-direction: column;
+        }
+        .options form select {
+            border-radius: 8px;
+        }
+        .options form select,input[type="text"],input[type="submit"] {
+            border-radius: 8px;
+            margin: 4px 0;
+        }
+
+        .about-law {
+            width: fit-content;
+            text-align: center;
+            width: 100%;
+            margin: 24px auto;
+        }
+        .about-law p{
+            text-align: justify;
+            padding: 8px 24px;
+        }
+        
+
+        .corona {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            height: fit-content;
+        }
+        .corona-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .corona-text a {
+            margin: 10px auto;
+            width: 35%;
+            text-align: center;
+        }
+
+        .cases {
+            width: 90%;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .topics {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            background-color: #d9d3d34d;
+            width: 100%;
+            padding: 20px
+        }
+        .box {
+            border: 2px solid white;
+            padding: 4px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .updates {
+            height: fit-content;
+            width: 100%;
+        }
+        .container {
+            height: fit-content;
+            width: 100%;
+        }
+        .text {
+            text-align: left;
+        }
+    }    
