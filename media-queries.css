@@ -29,7 +29,7 @@
     }
     .options {
         position: absolute;
-        top: 80%;
+        top: 50%;
         width: 100%;
         left: 0;
         height: fit-content;
@@ -91,6 +91,7 @@
 
     .cases {
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
     }
 
     .topics {
@@ -143,7 +144,7 @@
             width: 100%;
             margin: auto;
             left: 0;
-            top: 72%;
+            top: 32%;
             height: fit-content;
         }
         .options form {
@@ -200,7 +201,7 @@
             width: 100%;
             padding: 20px
         }
-        .box {
+        .topics .box {
             border: 2px solid white;
             padding: 4px;
             border-radius: 12px;
@@ -218,4 +219,76 @@
         .text {
             text-align: left;
         }
-    }    
+    }
+    @media only screen and (width >= 769px) and (width <= 1440px) {
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu li {
+        padding: 12px;
+    }
+    .header-top {
+        text-align: center;
+        padding: 0;
+    }
+    .options {
+        width: 100%;
+        left: 0;
+        top: 30%;
+    }
+    .about-law {
+        margin: 24px auto;
+    }
+    .about-law p{
+        text-align: justify;
+    }
+    .corona {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: fit-content;
+        padding: 12px;
+    }
+    .corona-text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .corona-text a {
+        width: 24%;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .cases {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .topics {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        width: 90%;
+        padding: 20px
+    }
+    .topics .box {
+        padding: 12px;
+        background-color: #d9d3d34d;
+        border: 2px solid white;
+        padding: 4px;
+        border-radius: 12px;
+        text-align: center;
+    }
+    .updates {
+        height: fit-content;
+    }
+    .container {
+        width: 80%;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    .container .box {
+        margin: 0;
+    }
+}
