@@ -74,14 +74,14 @@
         float: none;
         margin: 0;
     }
-    .corona h3 {
-        font-size: medium;
-    }
     .corona-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+    }
+    .corona h3 {
+        font-size: medium;
     }
     .corona-text a {
         text-align: center;
